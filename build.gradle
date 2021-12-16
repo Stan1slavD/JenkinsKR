@@ -11,6 +11,16 @@ dependencies {
     testImplementation 'junit:junit:4.13.1'
 }
 
+
+jacocoTestReport {
+    reports {
+        xml.required = false
+        csv.required = false
+        html.outputLocation = layout.buildDirectory.dir('jacocoHtml')
+    }
+}
+
+
 group = 'org.douggschwind'
 version = '1.0-SNAPSHOT'
 description = 'Games'
